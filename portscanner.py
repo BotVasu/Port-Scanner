@@ -6,12 +6,8 @@
 
 import pyfiglet
 import socket
-import termcolor
 
-# ASCII BANNER
-ascii_banner = pyfiglet.figlet_format("PORT SCANNER ")
-print(ascii_banner)
-print("By Vasu")
+
 
 # Scan the port upto user-defined range
 
@@ -31,6 +27,16 @@ def scan_port(ipaddress, port):
 	except:
 		pass
 
+# Main Function 
+# Targets: taking input from the user as an IP address
+# Ports: The number of ports you want to scan
+# You can scan multiple ports too but they should be "," separated.
+
+# ASCII BANNER
+ascii_banner = pyfiglet.figlet_format("PORT SCANNER By Vasu",font="bubble")
+print(ascii_banner)
+# print("")
+
 
 print("-" * 50)
 targets = input("[*] Enter Targets To Scan(split them by ,): ")
@@ -47,9 +53,6 @@ else:
 print("-" * 50)
 
 
-# Main Function 
-# Targets: taking input from the user as an IP address
-# Ports: The number of ports you want to scan
-# You can scan multiple ports too but they should be "," separated.
+
 
 
